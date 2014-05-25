@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="CloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-01.2.3">
+  <WorkerRole name="WorkerRole" vmsize="ExtraSmall">
+    <Imports>
+    </Imports>
+    <Endpoints>
+    </Endpoints>
+    <Startup>
+      <Task commandLine="Startup.cmd" executionContext="elevated" taskType="simple">
+      </Task>
+    </Startup>
+  </WorkerRole>
+</ServiceDefinition>
